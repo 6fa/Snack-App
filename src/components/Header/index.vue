@@ -2,10 +2,10 @@
   <div class="header g-header-container">
     <div class="header-item line1">
       <div class="logo">
-        <img :src="imgSrc"/>
+        <img :src="imgSrc" />
       </div>
       <!-- 已登录 -->
-      <div class="signed" v-if="loaded">
+      <div class="signed" v-if="loaded" @click="toLoginLayer">
         <i class="iconfont">&#xe6c8;</i><span class="text">{{ userName }}</span>
       </div>
       <!-- 未登录时 -->

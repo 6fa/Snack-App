@@ -8,7 +8,8 @@
 如有错误之处，欢迎指正~
 
 ## 运行
-首先要连接到数据库：<br>
+首先要连接到数据库：
+
 [Snack-server](https://github.com/6fa/Snack-Server)
 
 回到snack-app，安装依赖
@@ -25,7 +26,7 @@ npm run serve
 ```
   App running at:
   - Local:   http://localhost:8080/
-  - Network: http://192.168.3.5:8080/
+  - Network: http://xxx:8080/
 ```
 使用上面的链接即可访问查看效果
 
@@ -35,5 +36,9 @@ npm run build
 ```
 
 更多脚手架配置可以查看：
+
 [Configuration Reference](https://cli.vuejs.org/config/)
+
+## 部分效果图
+## 项目中遇到的问题及解决方法
 

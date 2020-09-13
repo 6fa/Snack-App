@@ -64,7 +64,7 @@ export default {
                 this.$store.dispatch("TOUSERNAME", res.data.userName);
                 this.$store.dispatch("TOUSERHEAD", res.data.userHead);
 
-                console.log(this.$route);
+                console.log(this.$route, this.$route.query.redirect);
                 let redirect = this.$route.query.redirect;
                 if (redirect) {
                   setTimeout(() => {

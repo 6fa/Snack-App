@@ -123,6 +123,10 @@ router.beforeEach((to, from, next) => {
           //无效token
           store.dispatch("TOLOGOUT");
         } else if (res.data.code == "200") {
+          // 如果是从登录注册页面过来的，先刷新页面，这样才会出现用户名
+          if (from.path == "/login") {
+            window.location.reload();
+          }
           next();
         }
       });

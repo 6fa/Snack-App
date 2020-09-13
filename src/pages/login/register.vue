@@ -134,9 +134,14 @@ export default {
             this.isRegisterSuccess = false;
           })
           .then(() => {
+            this.toLogin();
             this.upload();
           });
       }
+    },
+    // 注册成功后跳转到登录
+    toLogin() {
+      this.$emit("jumpToLogin");
     },
     //注册成功后上传头像
     upload() {

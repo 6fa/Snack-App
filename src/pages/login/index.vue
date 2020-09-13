@@ -23,6 +23,7 @@
       <register-box
         @cancelRegistbox="cancel"
         @alertFromRegister="showMyMsg"
+        @jumpToLogin="toLoginPage"
         v-if="!signIn"
       />
     </div>
