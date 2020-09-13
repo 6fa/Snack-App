@@ -35,10 +35,24 @@ npm run serve
 npm run build
 ```
 
-更多脚手架配置可以查看：
-
-[Configuration Reference](https://cli.vuejs.org/config/)
-
 ## 部分效果图
-## 项目中遇到的问题及解决方法
+#### 首页图
+![home-page](screenshot/home.png)
+
+#### 分享页
+![share-page](screenshot/share.png)
+
+#### 个人页面
+![my-page](screenshot/my.png)
+
+![my02-page](screenshot/my02.png)
+
+#### 编辑页面
+![edit-page](screenshot/edit.png)
+
+#### 零食详情页
+![detail-page](screenshot/detail.png)
+
+#### 搜索页
+![search-page](screenshot/search.png)
 
