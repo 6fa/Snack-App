@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="g-container">
+    <div class="g-view-container">
+
+      <transition name="page" appear>
+          <router-view />
+      </transition>
+    
+    </div>
+    <div class="g-footer-container">
+      <f-tabbar />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import FTabbar from "components/FTabbar";
 export default {
-  name: 'App',
+  name: "APP",
   components: {
-    HelloWorld
+    FTabbar
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 </style>
+
+

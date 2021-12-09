@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("../fonts/ZCOOLKuaiLe-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/ZCOOLKuaiLe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ZCOOLKuaiLe-Regular.woff2") format("woff2"), url("../fonts/ZCOOLKuaiLe-Regular.woff") format("woff"), url("../fonts/ZCOOLKuaiLe-Regular.ttf") format("truetype"), url("../fonts/ZCOOLKuaiLe-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+body {
+  font-family: 'MyWebFont' !important;
+}
